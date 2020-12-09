@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E3ABAB"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ImgPokemon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher_round"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/TxNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mi contacto"
+
+                />
+
+            <TextView
+                android:id="@+id/TxTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+51 79854851" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonCall"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="#93D32C"
+                android:backgroundTint="#D11D1D"
+                android:drawableBottom="@android:drawable/ic_menu_call"
+                android:foreground="@android:drawable/sym_call_outgoing"
+                android:foregroundTint="#23C526"
+                android:shadowColor="#3A9C7A"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnsms"
+                style="@android:style/Widget.DeviceDefault.Button.Inset"
+                android:layout_width="69dp"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                app:icon="@android:drawable/sym_action_email" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
